@@ -1,0 +1,58 @@
+using System.Collections.Generic;
+
+internal class program
+{
+    public static void Main(float firstNumber, float secondNumber, string operation)
+    {
+        float resultfirstnumber = firstNumber;
+        float resultsecondnumber = secondNumber;
+        string resultoperation = operation;
+    }
+    public static float firstNumber(string numbers)
+    {
+        Console.WriteLine("Enter your fisrt number :");
+        float first = Convert.ToSingle(Console.ReadLine());
+        return first;
+    }
+
+    public static float secondNumber(string numbers)
+    {
+        Console.WriteLine("Ennter your second number :");
+        float second = Convert.ToSingle(Console.ReadLine());
+        return second;
+    }
+
+    public static string operation()
+    {
+        Console.WriteLine("Choice your operation: ");
+        string useroperation = Console.ReadLine();
+        return useroperation;
+    }
+    public static void operationchoiced(float first, float second, string useroperation)
+    {
+        if (useroperation == "add")
+        {
+            Console.WriteLine(first + " + " + second + " = " + (first + second));
+        }
+
+        else if (useroperation == "multiply")
+        {
+            Console.WriteLine(first + " X " + second + " = " + (first * second));
+        }
+
+        else if (useroperation == "dividee")
+        {
+            Console.WriteLine(first + " / " + second + " = " + (first / second));
+        }
+
+        else if (useroperation == "substract")
+        {
+            Console.WriteLine(first + " - " + second + " = " + (first - second));
+
+        }
+        else
+        {
+            Console.WriteLine("Unknown operation. Please choose add, multiply, divide, or subtract.");
+        }
+    }
+}
